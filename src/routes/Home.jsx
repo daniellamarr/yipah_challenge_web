@@ -3,10 +3,10 @@ import {useQuery} from '@apollo/react-hooks';
 import Header from '../components/Header';
 import Card from '../components/Card';
 import TRANSACTIONS from '../apollo/transactions';
+import Loader from '../components/Loader';
 
 const Home = () => {
   const [cards, setCards] = useState([]);
-  const [loadingStatus, setLoadingStatus] = useState(false);
   const {loading, data, error} = useQuery(TRANSACTIONS);
 
   useEffect(() => {
@@ -27,9 +27,10 @@ const Home = () => {
       <Header />
       <main>
         <div className="cards">
-          {cards.map((card, index) => (
+          {!loading ? (
+            cards.map((card, index) => (
             <Card key={index} card={card} />
-          ))}
+          ))) : <Loader />}
         </div>
       </main>
     </section>

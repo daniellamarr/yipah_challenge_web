@@ -1,16 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Header = () => {
+const Header = ({color}) => {
   return (
     <header>
-      <div className="logo">
+      <div className="logo" style={{color}}>
         CODE CREDIT
       </div>
       <nav>
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/" style={{color}}>
               Transactions
             </Link>
           </li>
@@ -18,6 +18,10 @@ const Header = () => {
       </nav>
     </header>
   )
+}
+
+Header.defaultProps = {
+  color: '#7c53B0'
 }
 
 export default Header;
