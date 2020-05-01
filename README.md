@@ -1,6 +1,10 @@
 # yipah_challenge_web
 
-Frontend Deployed on netlify [https://practical-johnson-34f0fb.netlify.app](https://practical-johnson-34f0fb.netlify.app)
+Frontend Deployed on heroku [https://daniel-yipah-web.herokuapp.com](https://daniel-yipah-web.herokuapp.com)
+
+Backend Deployed on heroku [https://daniel-yipah-backend.herokuapp.com/graphql](https://daniel-yipah-backend.herokuapp.com/graphql)
+
+Backend Repository [https://github.com/daniellamarr/yipah_challenge_backend](https://github.com/daniellamarr/yipah_challenge_backend)
 
 #### Run Web App (Locally)
 - Ensure you have cloned and setup the backend server before proceeding.
