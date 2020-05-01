@@ -6,6 +6,8 @@ Backend Deployed on heroku [https://daniel-yipah-backend.herokuapp.com/graphql](
 
 Backend Repository [https://github.com/daniellamarr/yipah_challenge_backend](https://github.com/daniellamarr/yipah_challenge_backend)
 
+Mobile App Repository [https://github.com/daniellamarr/yipah_challenge_app](https://github.com/daniellamarr/yipah_challenge_app)
+
 #### Run Web App (Locally)
 - Ensure you have cloned and setup the backend server before proceeding.
 - Clone this repository `git clone https://github.com/daniellamarr/yipah_challenge_web`
