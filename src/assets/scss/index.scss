@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: $primary;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  .logo {
+    position: absolute;
+    top: 40px;
+    left: 160px;
+    letter-spacing: 0.5em;
+    color: $primary;
+    font-weight: bold;
+  }
+
+  nav {
+    position: absolute;
+    right: 160px;
+    top: 35px;
+
+    ul {
+      list-style: none;
+      display: inline;
+    }
+  }
+}
+
+main {
+  margin-top: 100px;
+  padding: 160px;
+  padding-top: 60px;
+}
+
+.cards {
+  display: flex;
+
+  .card {
+    background-color: $white;
+    height: 250px;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 40px rgba(170, 170, 170, 0.25);
+    transition: 0.3s all;
+
+    &:nth-of-type(4) {
+      margin-right: 0;
+    }
+
+    .card-details {
+      display: flex;
+      flex-direction: column;
+      height: 250px;
+      width: 250px;
+      align-items: center;
+      justify-content: center;
+      margin-top: -20px;
+    }
+
+    .date {
+      font-size: 13px;
+      color: $primary;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    .transaction-icon {
+      background-image: url(../images/purple_transaction.png);
+      height: 100px;
+      width: 100px;
+    }
+
+    .user {
+      margin-top: 10px;
+      color: $primary;
+    }
+
+    &:hover {
+      background-color: $primary;
+      margin-top: -15px;
+
+      .transaction-icon {
+        background-image: url(../images/light_transaction.png);
+      }
+
+      .user, .date {
+        color: $white;
+      }
+    }
+  }
+}

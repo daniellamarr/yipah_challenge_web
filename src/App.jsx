@@ -1,9 +1,18 @@
-import React, { Component } from "react";
+import React from 'react';
+import {BrowserRouter} from 'react-router-dom';
+import {ApolloProvider} from '@apollo/react-hooks';
+import client from './apollo';
+import Routes from './routes';
+import './assets/scss/index.scss';
 
-export default class App extends Component {
-  render() {
-    return (
-      <h1>Hey there!</h1>
-    );
-  }
+const App = () => {
+  return (
+    <ApolloProvider client={client}>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+    </ApolloProvider>
+  );
 }
+
+export default App;
